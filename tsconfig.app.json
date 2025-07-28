@@ -4,7 +4,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "baseUrl": "./src",
+    "paths": {
+      "@landing/*": ["app/landing/*"],
+      "@landing/sections/*": ["app/landing/components/*"],
+      "@img/*": ["assets/shared/img/*"],
+    }
   },
   "include": [
     "src/**/*.ts"

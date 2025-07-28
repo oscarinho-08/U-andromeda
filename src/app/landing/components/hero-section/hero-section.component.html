@@ -1,0 +1,44 @@
+<section class="bg-gradient-to-br from-slate-50 to-white py-20 px-4">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+    <!-- TEXT SIDE -->
+    <div class="space-y-8">
+      <div class="space-y-4">
+        <h1 class="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+          Universidad
+          <span class="bg-gradient-to-r from-blue-800 via-indigo-700 to-purple-500 bg-clip-text text-transparent">
+            Andromeda
+          </span>
+        </h1>
+        <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+          {{ dummyText }}
+        </p>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button class="btn btn-primary px-8 py-3 text-white text-lg">
+          Explorar programas
+        </button>
+        <button class="btn btn-outline btn-primary px-8 py-3 text-lg">
+          Más información
+        </button>
+      </div>
+    </div>
+
+    <!-- IMAGE SIDE -->
+    <div class="relative">
+      <div class="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+        <img 
+            src="assets/img/logo.png" 
+            alt="Logo Universidad Andrómeda" 
+            class="w-full h-full object-cover" 
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/20 to-transparent"></div>
+      </div>
+      <div class="hidden lg:block absolute -top-8 -right-8 w-24 h-24 bg-amber-400 rounded-full opacity-80"></div>
+      <div class="hidden lg:block absolute -bottom-8 -left-8 w-16 h-16 bg-purple-500 rounded-full opacity-80"></div>
+    </div>
+
+  </div>
+</section>

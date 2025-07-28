@@ -5,7 +5,12 @@
   "projects": {
     "u-andromdeda-f1": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "none",
+          "changeDetection": "Default"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -16,6 +21,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -81,5 +87,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b0e0b170-02ca-401b-ad84-108de264721a"
   }
 }
