@@ -1,37 +1,27 @@
-<div class="card shadow-2xl bg-white border-0">
-  <div class="card-body">
-    <!-- Encabezado -->
+<div class="card shadow-2xl bg-white border-0 h-full">
+  <div class="card-body flex flex-col justify-between">
     <h2 class="card-title text-slate-900">Send us a Message</h2>
     <p class="text-slate-600 mb-6">Fill out the form below and we'll get back to you within 24 hours.</p>
-
-    <!-- Formulario -->
     <form class="space-y-4">
-      <!-- Nombre y Apellido -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label class="block text-sm font-medium text-slate-700 mb-2">First Name</label>
-          <input type="text" placeholder="John" class="input input-bordered w-full" />
+          <input type="text" placeholder="John" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
         </div>
         <div>
           <label class="block text-sm font-medium text-slate-700 mb-2">Last Name</label>
-          <input type="text" placeholder="Doe" class="input input-bordered w-full" />
+          <input type="text" placeholder="Doe" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
         </div>
       </div>
-
-      <!-- Email -->
       <div>
         <label class="block text-sm font-medium text-slate-700 mb-2">Email</label>
-        <input type="email" placeholder="john.doe@example.com" class="input input-bordered w-full" />
+        <input type="email" placeholder="john.doe@example.com" class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
       </div>
-
-      <!-- Mensaje -->
       <div>
         <label class="block text-sm font-medium text-slate-700 mb-2">Message</label>
-        <textarea rows="4" placeholder="Tell us about your interests and goals..." class="textarea textarea-bordered w-full"></textarea>
+        <textarea rows="4" placeholder="Tell us about your interests and goals..." class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
       </div>
-
-      <!-- Botón -->
-      <button type="submit" class="btn w-full bg-indigo-600 hover:bg-indigo-700 text-white">
+      <button type="submit" class="btn w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-md px-4 py-2">
         Send Message
       </button>
     </form>

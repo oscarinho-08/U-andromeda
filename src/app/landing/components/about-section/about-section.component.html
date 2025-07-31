@@ -6,14 +6,14 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quas saepe, harum, voluptatum at dolor commodi neque sed nam ipsam rem.
             </p>
         </div>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
-        <app-card-about/>
-        <app-card-about/>
-        <app-card-about/>
-        <app-card-about/>
-        <app-card-about/>
-        <app-card-about/>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+            @for (cards of cards; track $index) {
+                <app-card-about
+                [title]="cards.title"
+                [description]="cards.description"
+                [icon]="cards.icon"
+                />
+            }
+        </div>
     </div>
 </section>

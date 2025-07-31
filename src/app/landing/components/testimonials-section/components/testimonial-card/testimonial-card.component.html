@@ -1,17 +1,17 @@
-<div class="card shadow-lg bg-gradient-to-br from-purple-100 to-white border-0">
-    <div class="card-body p-8">
+<div class="card shadow-lg bg-gradient-to-br from-purple-100 to-white border-0 h-full">
+    <div class="p-8 flex flex-col h-full">
       <div class="flex items-center mb-6">
         <img
           src="https://randomuser.me/api/portraits/women/44.jpg"
           alt="Testimonial"
           class="w-16 h-16 rounded-full object-cover mr-4" />
         <div>
-          <h4 class="font-semibold text-slate-900">Ana Rodríguez</h4>
-          <p class="text-slate-600">Estudiante de Derecho</p>
+          <h4 class="font-semibold text-slate-900">{{ name }}</h4>
+          <p class="text-slate-600">{{ career }}</p>
+          <blockquote class="text-slate-700 italic">
+            {{ description }}
+          </blockquote>
         </div>
       </div>
-      <blockquote class="text-slate-700 italic">
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti recusandae explicabo at ex nihil illo impedit, optio, harum unde nostrum."
-      </blockquote>
     </div>
   </div>

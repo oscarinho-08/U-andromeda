@@ -6,12 +6,18 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quas saepe, harum, voluptatum at dolor commodi neque sed nam ipsam rem.
             </p>
         </div>
-    </div>
-    <div class="grid md:grid-cols-3 gap-8">
-        <app-testimonial-card/>
-        <app-testimonial-card/>
-        <app-testimonial-card/>
-
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
+            @for (testimonials of testimonials; track $index) {
+                
+                <app-testimonial-card
+                [img]="testimonials.img"
+                [name]="testimonials.name"
+                [career]="testimonials.career"
+                [description]="testimonials.description"
+                />
+            }
+            
+        </div>
     </div>
 
 </section>

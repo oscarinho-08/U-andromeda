@@ -1,8 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-testimonial-card',
   imports: [],
   templateUrl: './testimonial-card.component.html',
 })
-export class TestimonialCardComponent { }
+export class TestimonialCardComponent { 
+  @Input() img!: string;
+  @Input() name!: string;
+  @Input() career!: string;
+  @Input() description!: string;
+}
