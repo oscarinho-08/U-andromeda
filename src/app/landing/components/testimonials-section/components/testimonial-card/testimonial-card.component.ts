@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-testimonial-card',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './testimonial-card.component.html',
 })
 export class TestimonialCardComponent { 
@@ -10,4 +11,5 @@ export class TestimonialCardComponent {
   @Input() name!: string;
   @Input() career!: string;
   @Input() description!: string;
+  @Input() bgGradient!: string;
 }
